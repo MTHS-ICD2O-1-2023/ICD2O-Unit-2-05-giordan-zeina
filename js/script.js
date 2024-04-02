@@ -17,7 +17,7 @@ function calculateSalary () {
   const PAY = (hoursWorked * hourlyWage * 1.00 - 0.18)
   const TAXES = ((hoursWorked * hourlyWage) * 0.18)
   // process
-  const calculateSalary = (PAY + TAXES)
+  const calculateSalary = PAY + TAXES
 
   // output
   document.getElementById('hours-worked').innerHTML = `Your pay will be: $ ${calculateSalary.toFixed(2)}`
